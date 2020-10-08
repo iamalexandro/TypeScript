@@ -83,4 +83,35 @@ course_name = 5;
 course_name = true;
 course_name = null;
 
-//
+//using types in functions
+
+function sayHello(name?: string): string {
+  if(!name) return `Hello strange`;
+  return `Hello ${name}`;
+}
+
+console.log(sayHello('Nicola'));
+console.log(sayHello());
+
+function multiplePlus(a: number, b:number, c?:number, d?:number): number {
+  if(!c) c=0;
+  if(!d) d=0;
+  return a + b + c + d;
+}
+
+console.log(`resultado ${multiplePlus(1, 2, 3, 4)}`);
+console.log(`resultado ${multiplePlus(1, 2)}`);
+
+//Arrays
+let names: string[] = ['Louis', 'Martha', 'Peter', 'Jhon'];
+let last_names: Array<string>;
+last_names = ['Brook', 'Taylor', 'Spears', 'Redfield'];
+
+console.log(names);
+console.log(last_names);
+
+// Tuples
+let purchase:[string, number, boolean];
+purchase = ['Pepsi', 2, true];
+
+console.log(purchase);
