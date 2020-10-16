@@ -1,10 +1,10 @@
 module.exports = {
     mode: "development",
     devtool: "inline-source-map",
-    entry: "./src/app.ts",
+    entry: "./src/03-class/app02.ts",
     output: {
-      filename: "app.js",
-      path: __dirname + './dist'
+      filename: "app02.js",
+      path: __dirname + './dist/03-class'
     },
     resolve: {
       // Add `.ts` and `.tsx` as a resolvable extension.
