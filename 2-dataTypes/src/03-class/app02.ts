@@ -10,9 +10,9 @@ let purchasedCourse: 'NodeJs' | 'Laravel' | 'React';
 purchasedCourse = 'React';
  
 function purchaseCourse(course: Course){
-  purchasedCourse = course; 
+  purchasedCourse = course;
 }
- 
+
 purchaseCourse('React');
 console.log('Curso Comprado: ' + purchasedCourse);
 
