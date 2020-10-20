@@ -65,5 +65,8 @@
     /* Advanced Options */
     "skipLibCheck": true,                     /* Skip type checking of declaration files. */
     "forceConsistentCasingInFileNames": true  /* Disallow inconsistently-cased references to the same file. */
-  }
+  },
+  "files": [
+    "./src/04-class/app01.ts"  //para tener en cuenta solo este archivo a la hora de compilar
+  ]
 }
